@@ -1,7 +1,8 @@
-function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+{function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
     return obj[key];
 }
 
 
-  const person = { name: "Meheraz", age: 30 };
+  const person = { name: "Alice", age: 30 };
 console.log(getProperty(person, "name")); // Output: Alice
+}
